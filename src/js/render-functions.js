@@ -1,5 +1,13 @@
-export function imageTemplate({largeImageURL, tags, likes, views, comments, downloads, webformatURL}) {
-    return `
+export function imageTemplate({
+  largeImageURL,
+  tags,
+  likes,
+  views,
+  comments,
+  downloads,
+  webformatURL,
+}) {
+  return `
       <a href="${largeImageURL}" class="gallery-item" data-lightbox="image-${largeImageURL}" data-title="${tags}">
         <div class="item-gallery">
           <img src="${webformatURL}" alt="${tags}" class="list-img">
@@ -24,4 +32,4 @@ export function imageTemplate({largeImageURL, tags, likes, views, comments, down
         </div>
       </a>
     `;
-  }
+}
